@@ -586,11 +586,11 @@ function toggleTheme() {
 
 // ─── SHARE ───
 function sharePage() {
-  const data = {
+const data = {
     title: 'سورة الكهف',
-    text: 'مَن قَرَأَ سورةَ الكَهفِ يومَ الجُمُعةِ أضاءَ له من النورِ ما بَينَ الجُمُعتينِ',
-    url: window.location.href
-  };
+    text: 'اقرأ سورة الكهف كاملة 📖\nمَن قَرَأَها يومَ الجُمُعةِ أضاءَ له النورُ ما بَينَ الجُمُعتينِ',
+    url: 'https://kahf.site/'
+};
   if (navigator.share) {
     navigator.share(data).catch(() => {});
   } else {
